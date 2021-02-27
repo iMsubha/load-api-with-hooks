@@ -7,17 +7,18 @@ function Userdetails(props) {
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'column',
-        backgroundColor: '#c0c0c0',
+        backgroundColor: '#F5CEBD',
         width: '200px',
         height: '150px',
         borderRadius: '10px',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        color: '#568587'
     }
     return (
         <div style={displayDetails}>
-            <h4>{props.name}</h4>
-            <h5>{props.email}</h5>
-            <h6>{props.street}</h6>
+            <h4 style={{ lineHeight: '0' }}>{props.name}</h4>
+            <h5 style={{ lineHeight: '0' }}>{props.email}</h5>
+            <h6 style={{ lineHeight: '0' }}>{props.street}</h6>
         </div>
     );
 }
